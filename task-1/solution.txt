@@ -1,0 +1,13 @@
+mkdir habiba
+touch habiba/one.txt habiba/two.txt habiba/three.txt habiba/four.txt
+mkdir habiba/BAD
+touch habiba/BAD/bad.txt
+mv habiba/one.txt Downloads
+cd Downloads
+cp one.txt copy.txt
+cd habiba
+nano two.txt
+echo "1-hello OSC\n2-hello OSC\n3-hello OSC\n4-hello OSC\n5-hello OSC\n6-hello OSC\n7-hello OSC\n8-hello OSC" >> three.txt
+mv three.txt hello.txt
+rm four.txt
+rm -r BAD
