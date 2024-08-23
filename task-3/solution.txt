@@ -8,9 +8,9 @@ touch ~/project_files/data/data.csv ~/project_files/data/info.txt
 nano ~/project_files/reports/report1.md
 nano ~/project_files/logs/system.log
 nano ~/project_files/data/data.csv
-tar -cvf logs_backup.tar logs/
+tar -cvf logs_backup.tar -C logs
 mv logs_backup.tar ~/project_files/
-tar -xvf ~/project_files/logs_backup.tar -C ~/project_files/logs
+tar -xvf logs_backup.tar -C logs
 find ~ -type f -name "*.md"
 find ~/project_files -type f -name "*.log"
 find ~/project_files -type f -name "file1.pdf"
